@@ -1,4 +1,4 @@
-/*let miNombre ="Alanis"
+let miNombre ="Alanis"
 
 let miApellido ="Lobato"
 
@@ -139,5 +139,5 @@ console.log("Tiene pase Normal " + paseNormal)
 let paseVip = prompt("Ingrese su saldo")
 console.log(paseVip>=1000)
 console.log("Tiene pase Vip "+ paseVip)
-*/
+
 
