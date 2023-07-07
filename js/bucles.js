@@ -17,7 +17,28 @@ while (true) {
     }
     suma += numero;
 }
+// ejercicio 3 
+let ultimoNumero = arrayDeNumeros[arrayDeNumeros.length - 1]
+console.log(`El ultimo numero ingresado fue ${ultimoNumero}`)
 
+let numero = Number(prompt("Ingrese su numero para adivinar"))
+let contador = 1
+if (numero == null || numero == " ") {
+    alert("No ingresaste un numero")
+} else {
+    while (numero != ultimoNumero && numero >= 1 && numero <= 100) {
+        contador++
+        if (numero > ultimoNumero) {
+            alert("Es mas grande")
+        } else {
+            alert("Es mas chico")
+        }
+        numero = Number(prompt("Ingrese un numero para adivinar"))
+    }
+    alert(`Ganaste en ${ contador } intentos`)
+}
+console.log(`Lo adivinaste en ${ contador } intentos`)
+// ejercicio 4 
 
 // ejercicio 4 
 
