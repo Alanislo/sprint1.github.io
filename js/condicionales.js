@@ -1,5 +1,5 @@
 // ejercicio 1 
-/*function numeroMayor(p1, p2) {
+function numeroMayor(p1, p2) {
     if (p1 > p2) {
         console.log("El primer numero es mayor que el segundo")
     }
@@ -74,6 +74,7 @@ function mayorEdad(persona1, persona2) {
         console.log(persona2.nombre + " es mayor de edad");
     }
 }
+esMayorDeEdad(persona1, persona2)
 
 function masAlto(persona1, persona2) {
     if (persona1.altura > persona2.altura) {
@@ -82,6 +83,8 @@ function masAlto(persona1, persona2) {
         console.log(persona2.nombre + " es más alto");
     }
 }
+masAlto(persona1, persona2)
+
 function masPesado(persona1, persona2) {
     if (persona1.peso > persona2.peso) {
         console.log(persona1.nombre + " es más pesado");
@@ -89,6 +92,7 @@ function masPesado(persona1, persona2) {
         console.log(persona2.nombre + " es más pesado");
     }
 }
+masPesado(persona1,persona2)
 //ejercicio 6 
 let nombre = prompt("Ingrese su nombre");
 let edad = prompt("Ingrese su edad");
@@ -102,6 +106,7 @@ function edadMinima(edad) {
         console.log("No cumples con la edad minima");
     }
 }
+edadMInima(19)
 function alturaMinima(altura) {
     if (alturaMinima >= 150) {
         console.log("Cumples con la altura necesaria");
@@ -109,13 +114,15 @@ function alturaMinima(altura) {
         console.log("No cumples con la altura minima");
     }
 }
+alturaMinima(165)
 function visionNecesaria(vision) {
     if (vision >= 8) {
         console.log("Cumples con la vision necesaria");
     } else {
         console.log("No cumples con la vision necesaria");
     }
-}*/
+}
+visionNecesaria(8)
 
 // ejercicio 7
 
@@ -152,6 +159,8 @@ function comproba(nombreCliente,pase,entrada) {
         }
     }
 }
+
+comproba(nombreCliente,pase,entrada)
 /*
 let nombre = prompt("Ingrese su nombre")
 function paseSeguro(nombre) {
@@ -202,7 +211,7 @@ function comprobarNumeroIncognita(numeroIncognita) {
     }
 }
 
-/*
+
 //Ejercicio 9
 let edad = prompt("Ingresa tu edad")
 let resultado = edadMayor(edad)
@@ -219,6 +228,7 @@ function edadMayor(edad) {
         console.log("Eres un anciano");
     }
 }
+edadMayor(34)
 console.log(resultado);
 
 //Ejercicio 10
@@ -239,6 +249,7 @@ function jugar(jugador1, jugador2) {
         console.log("Jugador 2 ha ganado!"); ;
       }
     }
+
     let jugador1 = prompt("Jugador 1, ingresa tu opción (PIEDRA, PAPEL o TIJERAS):");
     let jugador2 = prompt("Jugador 2, ingresa tu opción (PIEDRA, PAPEL o TIJERAS):");
     
@@ -275,8 +286,8 @@ function jugar(jugador1, jugador2) {
 */
 function calcularOperacion(valor) {
    
-    let valor1 = parseFloat(prompt("Ingrese el primer valor:"));
-    let valor2 = parseFloat(prompt("Ingrese el segundo valor:"));
+    let valor1 = prompt("Ingrese el primer valor:");
+    let valor2 = prompt("Ingrese el segundo valor:");
     let operacion = prompt("Ingrese la operación (suma, resta, multiplicación, división):");
   
     let resultado;
@@ -313,10 +324,10 @@ function calcularOperacion(valor) {
   calcularOperacion();
 
   // ejercicio 13
-  unction ingresarDatosDNI() {
+  function ingresarDatosDNI() {
     let numero = prompt("Ingrese el número de DNI:");
     let nombre = prompt("Ingrese su nombre:");
-    let afpellido = prompt("Ingrese su apellido:");
+    let apellido = prompt("Ingrese su apellido:");
     let fechaNacimiento = prompt("Ingrese su fecha de nacimiento:");
   
     console.log("Número de DNI: " + numero);
